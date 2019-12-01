@@ -1,0 +1,65 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<!--<GridPane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5" gridLinesVisible="true" >-->
+    <!--<padding>-->
+        <!--<Insets left="100"/>-->
+    <!--</padding>-->
+    <!--<Label text="java fx is cool!" textFill="red">-->
+        <!--<font>-->
+            <!--<Font name="David bold" size="20"/>-->
+
+        <!--</font>-->
+    <!--</Label>-->
+    <!--<Button text="BUTTON 1" GridPane.rowIndex="0" GridPane.columnIndex="1" />-->
+    <!--<Button text="BUTTON 2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>-->
+    <!--<Button text="BUTTON 3" GridPane.rowIndex="2" GridPane.columnIndex="3"/>-->
+    <!--<Button text="BUTTON 4" GridPane.rowIndex="3" GridPane.columnIndex="4"/>-->
+    <!--<Button text="BUTTON 555555" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.columnSpan="5"/>-->
+<!--</GridPane>-->
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+            <!--style="-fx-border-color:BLUE;-fx-border-width:3;-fx-border-style:dashed" -->
+    <top>
+        <Label text="Avratech 6" BorderPane.alignment="CENTER" style="-fx-border-color:BLUE;-fx-border-width:3;-fx-border-style:dashed">></Label>
+    </top>
+    <center>
+        <Label text="555555555555555555555555555555555555555555555555555555555555555555555555555555555" BorderPane.alignment="CENTER"></Label>
+    </center>
+
+
+
+
+   <bottom>
+      <!--<HBox spacing="24" alignment="CENTER">-->
+        <!--<FlowPane orientation="VERTICAL">-->
+       <!--<TilePane>-->
+        <StackPane>
+            <Button text="BUTTON 1"/>
+            <Button text="BUTTON 2" />
+            <Button text="BUTTON 3"/>
+            <Button text="BUTTON 4" />
+            <Button text="BUTTON 5"/>
+            <Button text="BUTTON 6" />
+            <Button text="BUTTON 7" />
+            <Button text="BUTTON 8" />
+            <Button text="BUTTON 9"/>
+            <Button text="BUTTON 10000000000000" style="-fx-background-color:blue" />
+            <Button text="BUTTON 111" />
+           </StackPane>
+       <!--</TilePane>-->
+       <!--</FlowPane>-->
+      <!--</HBox>-->
+   </bottom>
+
+</BorderPane>

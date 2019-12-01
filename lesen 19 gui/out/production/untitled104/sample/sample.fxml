@@ -1,0 +1,98 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.TitledPane?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="click her" onAction="#doit">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/media/Pause24.gif"></Image>
+            </ImageView>
+
+        </graphic>
+
+    </Button>
+    <Label text="avreatch 6 icons" GridPane.rowIndex="0" GridPane.columnIndex="1" textFill="blue" wrapText="true">
+        <font>
+            <Font name="Arial Italic" size="12"/>
+
+        </font>
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/media/Rewind16.gif"></Image>
+            </ImageView>
+        </graphic>
+
+    </Label>
+    <fx:define>
+        <ToggleGroup fx:id="colorg"/>
+    </fx:define>
+    <RadioButton text="rad" GridPane.rowIndex="0" GridPane.columnIndex="2" toggleGroup="$colorg" selected="true"></RadioButton>
+    <RadioButton text="Green" GridPane.rowIndex="0" GridPane.columnIndex="3" toggleGroup="$colorg"></RadioButton>
+    <RadioButton text="BLUE" GridPane.rowIndex="0" GridPane.columnIndex="4" toggleGroup="$colorg"></RadioButton>
+
+    <CheckBox text="avratech ffffff" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+
+        <CheckBox text="CHECK 1" onAction="#doit" ></CheckBox>
+        <CheckBox text="CHECK 2" ></CheckBox>
+        <CheckBox text="CHECK 3" ></CheckBox>
+    </VBox>
+
+
+
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="6">
+        <ToggleButton text="b1" ></ToggleButton>
+        <Button text="b2"></Button>
+        <Button text="b3"></Button>
+
+    </HBox>
+
+    <TextField fx:id="userInput" GridPane.rowIndex="3" GridPane.columnIndex="0"></TextField>
+    <Button text="PRINT INPUT TXT" onAction="#doit2" GridPane.rowIndex="7" GridPane.columnIndex="0"></Button>
+    <PasswordField GridPane.rowIndex="3" GridPane.columnIndex="1"></PasswordField>
+    <ComboBox GridPane.rowIndex="3" GridPane.columnIndex="4">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="s1" ></String>
+                <String fx:value="s2" ></String>
+                <String fx:value="s3" ></String>
+                <String fx:value="s4" ></String>
+                <String fx:value="s5" ></String>
+
+            </FXCollections>
+
+        </items>
+
+    </ComboBox>
+    <Slider GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100" showTickLabels="true" showTickMarks="true" minorTickCount="10" snapToTicks="false"></Slider>
+    <Spinner GridPane.rowIndex="6" GridPane.columnIndex="0" min="0" max="100"></Spinner>
+    <ColorPicker GridPane.rowIndex="6" GridPane.columnIndex="1"></ColorPicker>
+    <DatePicker GridPane.rowIndex="6" GridPane.columnIndex="2"></DatePicker>
+    <TitledPane text="try me" GridPane.rowIndex="6" GridPane.columnIndex="3">
+    <Label text="lll"></Label>
+    </TitledPane>
+
+</GridPane>
